@@ -1,0 +1,1 @@
+export const URL_NinjaSushi = 'http://localhost:5173/NinjaSushi'
