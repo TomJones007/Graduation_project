@@ -11,7 +11,8 @@ const Navbar = () => {
 
   return (
     <>
-     <div className="flex p-5 items-center justify-around bg-white border-2 rounded-2xl">
+   
+     <div className="flex m-5 p-5 items-center justify-around bg-white border-2 rounded-2xl">
 
     <div className="flex gap-5 bg-white">
         <img src="../../../public/Navbar_Icons/Logo.svg" alt="logo" />
@@ -66,6 +67,8 @@ const Navbar = () => {
     </div>
     
     </div>
+
+   
     </>
   )
 }
