@@ -15,6 +15,8 @@ i18n
       escapeValue: false, // не экранировать HTML
     },
     backend: {
-      loadPath: './Languages/{{Eng}}/{{Ru}}.json', // путь к файлам переводов
+      loadPath: '/locales/{{lng}}/{{ns}}.json', // путь к файлам переводов
     },
   });
+
+  

@@ -1,7 +1,14 @@
-import { t } from "i18next"
+import { changeLanguage, t } from "i18next"
 import { NavLink } from "react-router"
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+    const {t} =  useTranslation()
+    const ChangeLang = par => {
+    i18next.changeLanguage(par)
+}
+
   return (
     <>
      <div className="flex p-5 items-center justify-around bg-white border-2 rounded-2xl">
@@ -20,8 +27,8 @@ const Navbar = () => {
         </div>
         
        
-            <button >{t('langRu')}Ru</button>
-            <button>{t('langEn')}Eng</button>
+            <button onClick={()=>ChangeLang('Ru')}>{t('langRu')}Ru</button>
+            <button onClick={()=>ChangeLang('Eng')}>{t('langEn')}Eng</button>
       
         
 
