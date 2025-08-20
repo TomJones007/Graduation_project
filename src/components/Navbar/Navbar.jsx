@@ -1,3 +1,5 @@
+import { t } from "i18next"
+import { NavLink } from "react-router"
 
 const Navbar = () => {
   return (
@@ -17,17 +19,17 @@ const Navbar = () => {
        <img className="w-6" src="../../../public/Navbar_Icons/United-kingdom-flag-icon.svg" alt="language_flag" />
         </div>
         
-       <select name="Langauges" id="">
-            <option value="">Ru</option>
-            <option value="">Eng</option>
-        </select> 
+       
+            <button >{t('langRu')}Ru</button>
+            <button>{t('langEn')}Eng</button>
+      
         
 
         <ul className="flex gap-9 m-5">
-            <li>Главная</li>
-            <li>Доставка</li>
-            <li>О нас</li>
-            <li>Новости</li>
+            <NavLink to="/MainPage">Главная</NavLink>
+            <NavLink to="/delivery">Доставка</NavLink>
+            <NavLink to="about">О нас</NavLink>
+            <NavLink to="news">Новости</NavLink>
         </ul>
         <div className="flex gap-3">
         <img src="../../../public/Navbar_Icons/Telephone.svg" alt="phone" />
