@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import './index.scss'
 import { BrowserRouter } from 'react-router'
-
+import '../public/Languages/i18n.js'
 
 createRoot(document.getElementById('root')).render(
    <BrowserRouter>

@@ -1,0 +1,56 @@
+.header_container {
+  padding: 1rem;
+}
+
+.foodtypes_wrapper {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  gap: 1.5rem; 
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.foodtype_link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none; 
+  color: #7d7d7d;
+  font-size: 0.9rem;
+  transition: color 0.3s, transform 0.3s; 
+}
+
+.foodtype_link:hover {
+  transform: translateY(-3px); 
+}
+
+.foodtype_link.active .icon_wrapper {
+  background-color: #f0f0f0; 
+  border: 2px solid #5a5a5a;
+}
+
+.foodtype_link.active .title {
+  color: #333; 
+}
+
+.icon_wrapper {
+  background-color: #f7f7f7;
+  border-radius: 50%; 
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+/* .icon {
+  width: 25px;
+  height: 25px;
+} */
+
+.title {
+  font-weight: bold;
+}

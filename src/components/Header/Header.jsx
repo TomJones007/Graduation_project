@@ -1,66 +1,37 @@
 import React from 'react'
+import { NavLink } from 'react-router'
+import './Header.css'
+
+const FoodTypes = [
+  {title: 'Роллы', icon: '../../../public/Header_Icons/Rolls.svg', path: '/rolls'},
+  {title: 'Суши', icon: '../../../public/Header_Icons/Sushi.svg', path: '/sushi'},
+  {title: 'Сеты', icon: '../../../public/Header_Icons/Sets.svg', path: '/sets'},
+  {title: 'Боулы', icon: '../../../public/Header_Icons/Bouls.svg', path: '/bouls'},
+  {title: 'Напитки', icon: '../../../public/Header_Icons/Baverages.svg', path: '/baverages'},
+  {title: 'Соусы', icon: '../../../public/Header_Icons/Sauces.svg', path: '/sauces'},
+  {title: 'Неиз...', icon: '../../../public/Header_Icons/Unknown.svg', path: '/unknown'},
+  {title: 'Неиз...', icon: '../../../public/Header_Icons/Unknown.svg', path: '/unknown'}
+]
 
 const Header = () => {
   return (
-    <>
-    <div className="flex items-center justify-center">
-      
-      <div className="bg-white p-6 m-6 rounded-2xl ">
-        <div className="flex gap-9 items-center justify-center">
-         <a href="">
-        <img src="../../../public/Header_Icons/Rolls.svg" alt="" />
-      </a>
-      
-      <a href="">
-      <img src="../../../public/Header_Icons/Sushi.svg" alt="" />
-      
-      </a>
-      <a href="">
-        <img src="../../../public/Header_Icons/Sets.svg" alt="" />
-       
-      </a>
-      <a href="">
-        <img src="../../../public/Header_Icons/Bouls.svg" alt="" />
-        
-      </a>
-      <a href="">
-      <img src="../../../public/Header_Icons/Baverages.svg" alt="" />
-      
-      </a>
-      <a href="">
-      <img src="../../../public/Header_Icons/Sauces.svg" alt="" />
-      
-      </a>
-      <a href="">
-      <img src="../../../public/Header_Icons/Unknown.svg" alt="" />
-     
-      </a>
-      <a href="">
-      <img src="../../../public/Header_Icons/Unknown.svg" alt="" />
-      
-      </a>
-        </div>
-     
+    <div className='header_container'>
+    <div className="foodtypes_wrapper">
+      {FoodTypes.map((foodType, index) => {
+        <NavLink to={foodType.path} key={index} className={({isActive}) => isActive ? 'foodtype_link active' : 'foodtype_link'}>
 
-      <div className="flex gap-6">
-      <p>Роллы</p>
-      <p>Суши</p>
-      <p>Сеты</p>
-      <p>Боулы</p>
-      <p>Напитки</p>
-      <p>Соусы</p>
-      <p>Неизвестно</p>
-      <p>Неизвестно</p> 
-      </div>
-        
-      </div>
-        
-        
-        
-        
+          <div className="icon_wrapper">
+            <img src={foodType.icon} alt={foodType.title} className='icon' />
+            
+          </div>
+          <span className='title'>{foodType.title}</span>
+
+        </NavLink>
+      })}
     </div>
-    </>
+    </div>
   )
 }
+
 
 export default Header
