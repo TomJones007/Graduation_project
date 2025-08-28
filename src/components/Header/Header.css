@@ -1,5 +1,8 @@
 .header_container {
   padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .foodtypes_wrapper {
@@ -10,7 +13,8 @@
   background-color: #fff;
   border-radius: 20px;
   padding: 1.5rem 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 800px; 
 }
 
 .foodtype_link {
@@ -46,11 +50,31 @@
   margin-bottom: 8px;
 }
 
-/* .icon {
+.icon {
   width: 25px;
   height: 25px;
-} */
+}
 
 .title {
   font-weight: bold;
 }
+
+/* ----------- */
+
+.header_title{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: white;
+  border-radius: 25px;
+  align-items: center;
+  overflow: hidden;
+  margin: 20px;
+  /* gap: 200px; */
+}
+
+.header_text{
+  padding-left: 25px; 
+}
+
+

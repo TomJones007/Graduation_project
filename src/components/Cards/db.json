@@ -1,0 +1,331 @@
+{
+  "sushi": [
+    {
+      "id": 1,
+      "name": "Гункан лосось",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 40 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Sushi_Icons/Gulkan.svg"
+    },
+    {
+      "id": 2,
+      "name": "Гункан креветка",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 40 г",
+      "price": 190,
+      "image": "../../../public/Icons/Sushi_Icons/GulkanKrivetka.svg"
+    },
+    {
+      "id": 3,
+      "name": "Нигири угорь",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 40 г",
+      "price": 190,
+      "image": "../../../public/Icons/Sushi_Icons/NigiriBlack.svg"
+    },
+    {
+      "id": 4,
+      "name": "Нигири угорь",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 252 г",
+      "price": 190,
+      "image": "../../../public/Icons/Sushi_Icons/NigiriWhite.svg"
+    },
+    {
+      "id": 5,
+      "name": "Гункан с тунцом и трюфелем",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 40 г",
+      "price": 190,
+      "image": "../../../public/Icons/Sushi_Icons/GulkanTrufel.svg"
+    },
+    {
+      "id": 6,
+      "name": "Гункан тунец спайси",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 40 г",
+      "price": 190,
+      "image": "../../../public/Icons/Sushi_Icons/GulkanTunec.svg"
+    },
+    {
+      "id": 7,
+      "name": "Гункан угорь",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 40 г",
+      "price": 190,
+      "image": "../../../public/Icons/Sushi_Icons/GulkanUgor.svg"
+    },
+    {
+      "id": 8,
+      "name": "Нигири тунец",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 40 г",
+      "price": 190,
+      "image": "../../../public/Icons/Sushi_Icons/NigiriTunec.svg"
+    }
+  ],
+
+  "rolls": [
+    {
+      "id": 1,
+      "name": "Филадельфия с лососем",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 320 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Rolls_Icons/FiladelfiyaLosos.svg"
+    },
+    {
+      "id": 2,
+      "name": "Филадельфия с угрем",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 320 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Rolls_Icons/FiladelfiyaUgor.svg"
+    },
+    {
+      "id": 3,
+      "name": "Кратос",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 310 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Rolls_Icons/Kratos.svg"
+    },
+    {
+      "id": 4,
+      "name": "Ямамото",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 330 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Rolls_Icons/Yamamoto.svg"
+    },
+    {
+      "id": 5,
+      "name": "Запеченная креветка",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 350 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Rolls_Icons/ZapechenoyKrivetka.svg"
+    },
+    {
+      "id": 6,
+      "name": "Сырный с лососем",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 315 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Rolls_Icons/Sirniy.svg"
+    },
+    {
+      "id": 7,
+      "name": "Микаса",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 235 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Rolls_Icons/Mikasa.svg"
+    },
+    {
+      "id": 8,
+      "name": "Комбо Филадельфия",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 325 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Rolls_Icons/KomboFiladelfiya.svg"
+    }    
+  ],
+
+  "sets": [
+    {
+      "id": 1,
+      "name": "Сет #1",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 950 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Sets_Icons/Set1.svg"
+    },
+    {
+      "id": 2,
+      "name": "Сет #2",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 895 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Sets_Icons/Set2.svg"
+    },
+    {
+      "id": 3,
+      "name": "Сет #3",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 900 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Sets_Icons/Set3.svg"
+    },
+    {
+      "id": 4,
+      "name": "Сет Осака",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 252 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Sets_Icons/Set4.svg"
+    },
+    {
+      "id": 5,
+      "name": "Суши лосось в нори",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 1600 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Sets_Icons/SushiNori.svg"
+    },
+    {
+      "id": 6,
+      "name": "Сет #7",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 1400 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Sets_Icons/Set7.svg"
+    },
+    {
+      "id": 7,
+      "name": "Сет #7",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 1350 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Sets_Icons/Set71350.svg"
+    },
+    {
+      "id": 8,
+      "name": "Гункан Сет",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 1400 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Sets_Icons/GulkanSet.svg"
+    }
+
+
+
+  ],
+
+  "snacks": [
+    {
+      "id": 1,
+      "name": "Тартар из лосося с халапеньо",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 180 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Snacks_Icons/TartarHalap.svg"
+    },
+    {
+      "id": 2,
+      "name": "Тартар из лосося с авокадо",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 180 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Snacks_Icons/TartarAvocado.svg"
+    },
+    {
+      "id": 3,
+      "name": "Салат Чука-Вакаме",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 185 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Snacks_Icons/Chuka.svg"
+    },
+    {
+      "id": 4,
+      "name": "Салат с киноа, авокадо и курицей",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 252 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Snacks_Icons/Salad.svg"
+    },
+    {
+      "id": 5,
+      "name": "Инари с тунцом и трюфелем",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 60 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Snacks_Icons/InariTrufel.svg"
+    },
+    {
+      "id": 6,
+      "name": "Инари с морским гребешком и сыром",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 60 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Snacks_Icons/InariCheese.svg"
+    },
+    {
+      "id": 7,
+      "name": "Инари с лососем и авокадо",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 69 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Snacks_Icons/InariAvocado.svg"
+    },
+    {
+      "id": 8,
+      "name": "Тартар микс",
+      "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
+      "weight": "Вес: 225 г",
+      "price": 190 ,
+      "image": "../../../public/Icons/Snacks_Icons/TatarMix.svg"
+    }
+  ],
+
+  "baverages": [
+     {
+      "id": 1,
+      "name": "Coca-Cola 0.25(ст)",
+      "volume": "Объем: 0,25 л",
+      "price": 190 ,
+      "image": "../../../public/Icons/Baverages_Icons/Cola.svg"
+    },
+     {
+      "id": 2,
+      "name": "Fanta",
+      "volume": "Объем: 0,5 л",
+      "price": 190 ,
+      "image": "../../../public/Icons/Baverages_Icons/Fanta.svg"
+    },
+     {
+      "id": 3,
+      "name": "Моршинская негаз.",
+      "volume": "Объем: 0,5 л",
+      "price": 190 ,
+      "image": "../../../public/Icons/Baverages_Icons/Morshinskaya.svg"
+    },
+     {
+      "id": 4,
+      "name": "Берн",
+      "volume": "Объем: 0,25 л",
+      "price": 190 ,
+      "image": "../../../public/Icons/Baverages_Icons/Burn.svg"
+    },
+     {
+      "id": 5,
+      "name": "Coca-Cola Vanilla",
+      "volume": "Объем: 0,330 л",
+      "price": 190 ,
+      "image": "../../../public/Icons/Baverages_Icons/ColaVanilla.svg"
+    },
+     {
+      "id": 6,
+      "name": "Dr Pepper вишня",
+      "volume": "Объем: 0,330 л",
+      "price": 190 ,
+      "image": "../../../public/Icons/Baverages_Icons/DrPepperCherry.svg"
+    },
+     {
+      "id": 7,
+      "name": "Dr Pepper классический",
+      "volume": "Объем: 0,330 л",
+      "price": 190 ,
+      "image": "../../../public/Icons/Baverages_Icons/DrPepperClassic.svg"
+    },
+     {
+      "id": 8,
+      "name": "Sprite",
+      "volume": "Объем: 0,330 л",
+      "price": 190 ,
+      "image": "../../../public/Icons/Baverages_Icons/Sprite.svg"
+    }
+  ]
+}

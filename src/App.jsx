@@ -1,8 +1,7 @@
-
 import './App.css'
-import Header from './components/Header/Header.jsx'
 import Navbar from './components/Navbar/Navbar.jsx'
 import './index.css'
+import MainPage from './Pages/MainPage/MainPage.jsx'
 
 
 function App() {
@@ -12,14 +11,9 @@ function App() {
 
   return (
     <>
-    <div className="site">
-
-   
-    <Navbar/>
-    <Header/>
-
-
-    </div>
+  
+    <MainPage/>
+  
     </>
   )
 }
