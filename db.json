@@ -6,7 +6,7 @@
       "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
       "weight": "Вес: 40 г",
       "price": 190 ,
-      "image": "../../../public/Icons/Sushi_Icons/Gulkan.svg"
+      "image": "/Icons/Sushi_Icons/Gulkan.svg"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
       "weight": "Вес: 40 г",
       "price": 190,
-      "image": "../../../public/Icons/Sushi_Icons/GulkanKrivetka.svg"
+      "image": "/Icons/Sushi_Icons/GulkanKrivetka.svg"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
       "weight": "Вес: 40 г",
       "price": 190,
-      "image": "../../../public/Icons/Sushi_Icons/NigiriBlack.svg"
+      "image": "/Icons/Sushi_Icons/NigiriBlack.svg"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
       "weight": "Вес: 252 г",
       "price": 190,
-      "image": "../../../public/Icons/Sushi_Icons/NigiriWhite.svg"
+      "image": "/Icons/Sushi_Icons/NigiriWhite.svg"
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
       "weight": "Вес: 40 г",
       "price": 190,
-      "image": "../../../public/Icons/Sushi_Icons/GulkanTrufel.svg"
+      "image": "/Icons/Sushi_Icons/GulkanTrufel.svg"
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
       "weight": "Вес: 40 г",
       "price": 190,
-      "image": "../../../public/Icons/Sushi_Icons/GulkanTunec.svg"
+      "image": "/Icons/Sushi_Icons/GulkanTunec.svg"
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
       "weight": "Вес: 40 г",
       "price": 190,
-      "image": "../../../public/Icons/Sushi_Icons/GulkanUgor.svg"
+      "image": "/Icons/Sushi_Icons/GulkanUgor.svg"
     },
     {
       "id": 8,
@@ -62,7 +62,7 @@
       "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
       "weight": "Вес: 40 г",
       "price": 190,
-      "image": "../../../public/Icons/Sushi_Icons/NigiriTunec.svg"
+      "image": "/Icons/Sushi_Icons/NigiriTunec.svg"
     }
   ],
 
