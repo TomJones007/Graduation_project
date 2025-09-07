@@ -4,6 +4,7 @@ import Delivery from '../Pages/Delivery/Delivery'
 import MainPage from '../Pages/MainPage/MainPage'
 import Account from '../Pages/PersonalAccount/Account'
 import { Link, Route } from 'react-router'
+import Contract from '../Pages/Contract/Contract'
 
 const RouterPages = [
     {
@@ -36,6 +37,13 @@ const RouterPages = [
         "icon": "",
         "href": '/account',
         "component": <Account/>
+    },
+    {
+        "id": 5,
+        "name": "Contract",
+        "icon": "",
+        "href": '/contract',
+        "component": <Contract/>
     },
   
 ]

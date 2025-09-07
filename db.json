@@ -327,5 +327,15 @@
       "price": 190 ,
       "image": "../../../public/Icons/Baverages_Icons/Sprite.svg"
     }
+  ],
+
+  "banner": [
+     {
+      "id": 1,
+      "name": "Филадельфия с лососем",
+      "description": "Сир вершковий, шиітаке теріякі, краб-крем, лосось",
+      "price": 190 ,
+      "image": "../../../public/Icons/PromoBanner_Icons/FilaLosos.svg"
+    }
   ]
 }

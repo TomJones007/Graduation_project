@@ -1,23 +1,23 @@
 import { changeLanguage, t } from "i18next"
-import { NavLink } from "react-router"
+import { Link, NavLink, useLocation } from "react-router"
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
     const {t} =  useTranslation()
     const ChangeLang = par => {
-    i18next.changeLanguage(par)
-}
+        i18next.changeLanguage(par)
+    }
 
-  return (
+
+return (
     <>
    
      <div className="flex m-5 p-5 items-center justify-around bg-white rounded-2xl">
 
     <div className="flex gap-5 bg-white">
         <img src="../../../public/Icons/Navbar_Icons/Logo.svg" alt="logo" />
-    
-
+                    
         <img className="p-5 bg-[#F5F5F7]" src="../../../public/Icons/Navbar_Icons/Arrow-down.svg" alt="arrow_down" />
     </div>
 
@@ -34,8 +34,8 @@ const Navbar = () => {
         
 
         <ul className="flex gap-9 m-5">
-            <NavLink to="/MainPage">Главная</NavLink>
-            <NavLink to="/delivery">Доставка</NavLink>
+            <Link to="/">Главная</Link>
+            <Link to="/delivery">Доставка</Link>
             <NavLink to="about">О нас</NavLink>
             <NavLink to="news">Новости</NavLink>
         </ul>

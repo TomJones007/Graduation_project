@@ -3,6 +3,10 @@ import Navbar from '../../components/Navbar/Navbar';
 import Header from '../../components/Header/Header';
 import ProductList from '../../components/ProductList/ProductList';
 import { useGetSushiQuery, useGetRollsQuery, useGetSaucesQuery, useGetSetsQuery, useGetSnacksQuery, useGetBaveragesQuery } from "../../Features/API/APISlice";
+import PromoSlider from '../../components/PromoBanner/PromoSlider';
+import Map from './Map/Map';
+import Footer from '../../components/Footer/Footer';
+import { useLocation } from 'react-router';
 
 const MainPage = () => {
   const { data: sushi = [], isLoading: sushiLoading, error: sushiError } = useGetSushiQuery();
@@ -12,13 +16,23 @@ const MainPage = () => {
   const { data: baverages = [], isLoading: baveragesLoading, error: baveragesError } = useGetBaveragesQuery();
   const { data: sauces = [], isLoading: saucesLoading, error: saucesError } = useGetSaucesQuery();
 
+  const location = useLocation();
+    const getBgColor = () => {
+       if (location.pathname === "/rolls")
+       if (location.pathname === "/sushi") 
+       if (location.pathname === "/contract") 
+       return "bg-gray-100";
+     };
 
   return (
     <>
+    <div className={getBgColor()}>
+
       <Navbar />
+    </div>
       <Header />
       
-      <ProductList 
+      <ProductList
         title="Суши" 
         data={sushi} 
         isLoading={sushiLoading} 
@@ -39,6 +53,8 @@ const MainPage = () => {
         error={setsError} 
       />
 
+      <PromoSlider/>
+
       <ProductList 
         title="Закуски" 
         data={snacks} 
@@ -52,12 +68,15 @@ const MainPage = () => {
         isLoading={baveragesLoading} 
         error={baveragesError} 
       />
-      <ProductList 
+      {/* <ProductList 
         title="Соусы" 
         data={sauces} 
         isLoading={saucesLoading} 
         error={saucesError} 
-      />
+      /> */}
+
+      <Map/>
+      <Footer/>
     </>
   );
 };
