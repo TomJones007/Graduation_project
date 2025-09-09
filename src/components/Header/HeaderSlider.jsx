@@ -2,7 +2,7 @@ import React from 'react'
 import './Header.css'
 import { Slide } from 'react-slideshow-image';
 import "react-slideshow-image/dist/styles.css";
-import { NavLink } from 'react-router';
+import { NavLink } from 'react-router-dom';
 
 const HeaderSlider = () => {
     const slideImages = [
@@ -26,7 +26,7 @@ const HeaderSlider = () => {
         <p className='pl-9 p-5 text-2xl text-[#686870]'>Доставку делаем с 10:00 до 19:30</p>
         <div className="pl-9">
         <NavLink to="/news">
-          <button className='w-80 p-3 mt-3 text-white rounded-2xl bg-[#00CC2D]'>Перейти к новости</button>
+          <button className='w-80 p-3 mt-3 text-white rounded-2xl bg-[#00CC2D] cursor-pointer hover:scale-125 transition hover:shadow-2xl'>Перейти к новости</button>
         </NavLink> 
         </div>
       </div> 

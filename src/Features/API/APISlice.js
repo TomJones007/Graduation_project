@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const APISlice = createApi({
   reducerPath: "api",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3001/" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5173/" }),
   endpoints: (builder) => ({
     getSushi: builder.query({
       query: () => "sushi",
@@ -16,11 +16,11 @@ export const APISlice = createApi({
     getSnacks: builder.query({
       query: () => "snacks",
     }),
-    getBaverages: builder.query({
-      query: () => "baverages",
+    getBeverages: builder.query({
+      query: () => "beverages",
     }),
     getSauces: builder.query({
-  query: () => "/sauces",
+  query: () => "sauces",
 }),
 
   }),
@@ -31,7 +31,7 @@ export const {
   useGetRollsQuery,
   useGetSetsQuery,
   useGetSnacksQuery,
-  useGetBaveragesQuery,
+  useGetBeveragesQuery,
   useGetSaucesQuery,
 } = APISlice;
 

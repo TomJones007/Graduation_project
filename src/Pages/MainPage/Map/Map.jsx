@@ -34,7 +34,7 @@ const Map = () => {
         ></iframe>
         </div>
 
-    <div className="flex bg-white justify-between mx-15 rounded-3xl items-center mt-70 px-20 py-10 pb-13">
+    <div className=" flex bg-white justify-between mx-15 rounded-3xl items-center mt-70 px-20 py-10 pb-13">
       <div className="">
 
       <h1 className='text-5xl font-bold w-120 my-5'>Ниндзя - это семья. Скачивайте наше приложение</h1>
@@ -65,7 +65,7 @@ const Map = () => {
 
     <div className="flex justify-end p-2">
       <button className='flex gap-2 justify-center items-center w-45 '>
-        <p className='text-[#00CC2D]'>Читать больше</p> 
+       <a href=""><p className='text-[#00CC2D]'>Читать больше</p></a>  
         <img src="/Icons/Map_Icons/GreenArrow.svg" alt="GreenArrow" />
       </button>
     </div>

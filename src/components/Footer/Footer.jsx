@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router'
+import { Link, NavLink } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="flex gap-20 mt-10 ">
       
     <div className="flex flex-col gap-3">
-      <img src="../../../public/Icons/Navbar_Icons/Logo.svg" alt="logo" />
+      <img src="/Icons/Navbar_Icons/Logo.svg" alt="logo" />
 
       <div className="flex gap-5 mt-9">
         <button className='flex bg-black p-4 rounded-[5px] gap-2 w-[150px] '>
@@ -32,22 +32,24 @@ const Footer = () => {
     <p className='text-[#686870] text-[14px]'>Навигация:</p>
 
 
-    <ul className='flex flex-col gap-3'>
+    <div className='flex flex-col gap-3'>
       <NavLink to="/">Главная</NavLink>
       <NavLink to="/">Меню</NavLink>
       <NavLink to="/delivery">Доставка</NavLink>
-      <NavLink to="about">Вакансии</NavLink>
-      <NavLink to="news">Новости</NavLink>
-    </ul>
+      <NavLink to="/about">Вакансии</NavLink>
+      <NavLink to="/news">Новости</NavLink>
+    </div>
   
     </div>
 
     <div className="flex flex-col gap-5">
       <p className='text-[#686870] text-[14px]'>Оформить заказ:</p>
       <ul className='flex flex-col gap-3'>
+       <a href="tel: +38 (067) 436 61 27">
         <li>+38 (067) 436 61 27</li>
-        <li>+38 (066) 031 76 30</li>
-        <li>+38 (093) 924 98 28</li>
+        </a> 
+        <a href="tel: +38 (066) 031 76 30"><li>+38 (066) 031 76 30</li></a>
+        <a href="tel: +38 (093) 924 98 28"><li>+38 (093) 924 98 28</li></a>
       </ul>
     </div>
 
@@ -87,7 +89,7 @@ const Footer = () => {
       
       <p className='text-6xl font-bold'>#NinjaSushi</p>
       <p className='text-[#686870] text-[14px] w-50'>Ninja Sushi в фотографиях наших клиентов</p>
-      <a classname="cursor-pointer" href="https://www.instagram.com/">
+      <a className="cursor-pointer" href="https://www.instagram.com/">
         <button className='text-[#00CC2D] p-5 rounded-[10px] bg-[#F5F5F7]'>Перейти в instagram</button>
       </a>
     </div>

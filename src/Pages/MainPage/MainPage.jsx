@@ -2,18 +2,18 @@ import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Header from '../../components/Header/Header';
 import ProductList from '../../components/ProductList/ProductList';
-import { useGetSushiQuery, useGetRollsQuery, useGetSaucesQuery, useGetSetsQuery, useGetSnacksQuery, useGetBaveragesQuery } from "../../Features/API/APISlice";
+import { useGetSushiQuery, useGetRollsQuery, useGetSaucesQuery, useGetSetsQuery, useGetSnacksQuery, useGetBeveragesQuery } from "../../Features/API/APISlice";
 import PromoSlider from '../../components/PromoBanner/PromoSlider';
 import Map from './Map/Map';
 import Footer from '../../components/Footer/Footer';
-import { useLocation } from 'react-router';
+import { useLocation } from 'react-router-dom';
 
-const MainPage = () => {
+const   MainPage = () => {
   const { data: sushi = [], isLoading: sushiLoading, error: sushiError } = useGetSushiQuery();
   const { data: rolls = [], isLoading: rollsLoading, error: rollsError } = useGetRollsQuery();
   const { data: sets = [], isLoading: setsLoading, error: setsError } = useGetSetsQuery();
   const { data: snacks = [], isLoading: snacksLoading, error: snacksError } = useGetSnacksQuery();
-  const { data: baverages = [], isLoading: baveragesLoading, error: baveragesError } = useGetBaveragesQuery();
+  const { data: beverages = [], isLoading: baveragesLoading, error: baveragesError } = useGetBeveragesQuery();
   const { data: sauces = [], isLoading: saucesLoading, error: saucesError } = useGetSaucesQuery();
 
   const location = useLocation();
@@ -27,9 +27,9 @@ const MainPage = () => {
   return (
     <>
     <div className={getBgColor()}>
-
       <Navbar />
     </div>
+
       <Header />
       
       <ProductList
@@ -64,7 +64,7 @@ const MainPage = () => {
 
       <ProductList 
         title="Напитки" 
-        data={baverages} 
+        data={beverages} 
         isLoading={baveragesLoading} 
         error={baveragesError} 
       />

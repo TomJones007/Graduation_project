@@ -1,14 +1,19 @@
-import { changeLanguage, t } from "i18next"
-import { Link, NavLink, useLocation } from "react-router"
+import { changeLanguage } from "i18next"
+import { Link, NavLink, useLocation } from "react-router-dom"
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
+import NotificationsModal from "./NotificationsModal";
+import { useState } from "react";
+
+
 
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
     const {t} =  useTranslation()
     const ChangeLang = par => {
         i18next.changeLanguage(par)
     }
-
+ 
 
 return (
     <>
@@ -16,15 +21,15 @@ return (
      <div className="flex m-5 p-5 items-center justify-around bg-white rounded-2xl">
 
     <div className="flex gap-5 bg-white">
-        <img src="../../../public/Icons/Navbar_Icons/Logo.svg" alt="logo" />
+        <img src="/Icons/Navbar_Icons/Logo.svg" alt="logo" />
                     
-        <img className="p-5 bg-[#F5F5F7]" src="../../../public/Icons/Navbar_Icons/Arrow-down.svg" alt="arrow_down" />
+        <img className="p-5 bg-[#F5F5F7]" src="/Icons/Navbar_Icons/Arrow-down.svg" alt="arrow_down" />
     </div>
 
     <div className="flex gap-6 items-center">
         <div className="flex gap-1">
-       <img className="w-6" src="../../../public/Icons/Navbar_Icons/Russia-flag-icon.svg" alt="language_flag" />
-       <img className="w-6" src="../../../public/Icons/Navbar_Icons/United-kingdom-flag-icon.svg" alt="language_flag" />
+       <img className="w-6" src="/Icons/Navbar_Icons/Russia-flag-icon.svg" alt="language_flag" />
+       <img className="w-6" src="/Icons/Navbar_Icons/United-kingdom-flag-icon.svg" alt="language_flag" />
         </div>
         
        
@@ -34,33 +39,37 @@ return (
         
 
         <ul className="flex gap-9 m-5">
-            <Link to="/">Главная</Link>
-            <Link to="/delivery">Доставка</Link>
-            <NavLink to="about">О нас</NavLink>
-            <NavLink to="news">Новости</NavLink>
+            <Link to="/" className="transition hover:text-orange-500 hover:shadow-2xl hover:scale-105">Главная</Link>
+            <Link to="/delivery" className="transition hover:text-orange-500 hover:shadow-2xl hover:scale-105">Доставка</Link>
+            <NavLink to="about" className="transition hover:text-orange-500 hover:shadow-2xl hover:scale-105">О нас</NavLink>
+            <NavLink to="news"  className="transition hover:text-orange-500 hover:shadow-2xl hover:scale-105">Новости</NavLink>
         </ul>
         <div className="flex gap-3">
-        <img src="../../../public/Icons/Navbar_Icons/Telephone.svg" alt="phone" />
-        <p>+38 097 699 34 38</p>
+        <img src="/Icons/Navbar_Icons/Telephone.svg" alt="phone" />
+       <a href="tel: +380976993438" className="transition hover:text-orange-500 hover:shadow-2xl hover:scale-105">+38 097 699 34 38</a> 
         </div>
     </div>
 
     <div className="flex gap-4">
-        <button className="p-3 rounded-2xl border-gray-400 border-1 ">
-            <img src="../../../public/Icons/Navbar_Icons/Bell.svg" alt="bell" />
+        <div className="">
+
+        <button  className="group p-3 rounded-2xl border-gray-400 border-1 hover:bg-orange-500 active:bg-orange-500 transition"  onClick={() => setIsOpen(true)}>
+            <img src="/Icons/Navbar_Icons/Bell.svg" alt="bell"  className="transition group-hover:invert group-hover:brightness-0 group-hover:contrast-100" />
+        </button>
+        {isOpen && <NotificationsModal onClose={() => setIsOpen(false)} />}
+        </div>
+
+        <button className="group p-3 rounded-2xl border-gray-400 border-1 hover:bg-orange-500 active:bg-orange-500 transition" >
+            <img src="/Icons/Navbar_Icons/Heart.svg" alt="heart" className="transition group-hover:invert group-hover:brightness-0 group-hover:contrast-100"/>
         </button>
 
-        <button className="p-3 rounded-2xl border-gray-400 border-1 " >
-            <img src="../../../public/Icons/Navbar_Icons/Heart.svg" alt="heart" />
+        <button className="group p-3 rounded-2xl border-gray-400 border-1 hover:bg-orange-500 active:bg-orange-500 transition" onClick={() => setIsOpen(true)}>
+            <img src="/Icons/Navbar_Icons/Account.svg" alt="account" className="transition group-hover:invert group-hover:brightness-0 group-hover:contrast-100"/>     
         </button>
 
-        <button className="p-3 rounded-2xl border-gray-400 border-1 ">
-            <img src="../../../public/Icons/Navbar_Icons/Account.svg" alt="account" />     
-        </button>
-
-        <button className="flex gap-2 items-center p-3 pr-6 pl-6 rounded-2xl border-gray-400 border-1">
-            <p>Корзина</p>
-            <img src="../../../public/Icons/Navbar_Icons/Basket.svg" alt="basket" />
+        <button className="group flex gap-2 items-center p-3 pr-6 pl-6 rounded-2xl border-gray-400 border-1  hover:bg-orange-500 active:bg-orange-500 transition" onClick={() => setIsOpen(true)}>
+            <p className="transition group-hover:invert group-hover:brightness-0 group-hover:contrast-100">Корзина</p>
+            <img src="/Icons/Navbar_Icons/Basket.svg" alt="basket" className="transition group-hover:invert group-hover:brightness-0 group-hover:contrast-100"/>
         </button>
     </div>
     

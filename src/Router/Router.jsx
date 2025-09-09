@@ -3,10 +3,11 @@ import About from '../Pages/AboutUs/About'
 import Delivery from '../Pages/Delivery/Delivery'
 import MainPage from '../Pages/MainPage/MainPage'
 import Account from '../Pages/PersonalAccount/Account'
-import { Link, Route } from 'react-router'
+import { Link, Route } from 'react-router-dom'
 import Contract from '../Pages/Contract/Contract'
+import Unknown from '../Pages/MainPage/Unknown/Unknown'
 
-const RouterPages = [
+export const RouterPages = [
     {
         "id": 1,
         "name": "Главная",
@@ -44,6 +45,13 @@ const RouterPages = [
         "icon": "",
         "href": '/contract',
         "component": <Contract/>
+    },
+    {
+        "id": 6,
+        "name": "Unknown",
+        "icon": "",
+        "href": '/404',
+        "component": <Unknown/>
     },
   
 ]
