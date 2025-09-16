@@ -7,6 +7,7 @@ import PromoSlider from '../../components/PromoBanner/PromoSlider';
 import Map from './Map/Map';
 import Footer from '../../components/Footer/Footer';
 import { useLocation } from 'react-router-dom';
+import HeaderSlider from '../../components/Header/HeaderSlider';
 
 const   MainPage = () => {
   const { data: sushi = [], isLoading: sushiLoading, error: sushiError } = useGetSushiQuery();
@@ -16,21 +17,11 @@ const   MainPage = () => {
   const { data: beverages = [], isLoading: baveragesLoading, error: baveragesError } = useGetBeveragesQuery();
   const { data: sauces = [], isLoading: saucesLoading, error: saucesError } = useGetSaucesQuery();
 
-  const location = useLocation();
-    const getBgColor = () => {
-       if (location.pathname === "/rolls")
-       if (location.pathname === "/sushi") 
-       if (location.pathname === "/contract") 
-       return "bg-gray-100";
-     };
 
   return (
     <>
-    <div className={getBgColor()}>
-      <Navbar />
-    </div>
-
-      <Header />
+   
+      <HeaderSlider/>
       
       <ProductList
         title="Суши" 
@@ -76,7 +67,7 @@ const   MainPage = () => {
       /> */}
 
       <Map/>
-      <Footer/>
+    
     </>
   );
 };

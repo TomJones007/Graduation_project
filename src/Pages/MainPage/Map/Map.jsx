@@ -4,7 +4,7 @@ const Map = () => {
   return (
     <>
     <div className="flex flex-col items-center bg-white mt-30">
-    <h1 className='text-4xl font-bold w-220 border-2 text-center mt-35 mb-5'>
+    <h1 className='text-4xl font-bold w-220 text-center mt-35 mb-5'>
         Каждая кухня работает со своей зоной доставки, чтобы привезти еду максимально быстро
     </h1>
 
@@ -34,28 +34,29 @@ const Map = () => {
         ></iframe>
         </div>
 
-    <div className=" flex bg-white justify-between mx-15 rounded-3xl items-center mt-70 px-20 py-10 pb-13">
+    <div className=" flex bg-white justify-between mx-15 rounded-3xl items-center mt-70 px-20 py-20 pb-13 relative">
       <div className="">
 
       <h1 className='text-5xl font-bold w-120 my-5'>Ниндзя - это семья. Скачивайте наше приложение</h1>
       <p className='text-2xl w-86 text-[#1D1D1F]'>Станьте ниндзя! Будьте в курсе всех новинок и никогда не оставаться голодным.</p>
 
       <div className="flex gap-5 mt-9">
-        <button className='flex bg-black p-4 rounded-[5px] gap-2 w-[150px] '>
-          <img className='h-10px' src="/Icons/Map_Icons/Apple.svg" alt="" />
-          <img className='h-10px' src="/Icons/Map_Icons/AppStore.svg" alt="" />
-
+        <button className='h-9 cursor-pointer  hover:scale-105 hover:shadow-2xl'>
+          <a href="https://www.apple.com/app-store/">
+          <img src="/Icons/Map_Icons/AppStore.svg" alt="AppStore_button" />
+          </a>
         </button>
-        <button className='flex bg-black p-4 rounded-[5px] gap-2 w-[150px]'>
-          <img className='h-10px' src="/Icons/Map_Icons/GooglePlayIcon.svg" alt="" />
-          <img className='h-10px' src="/Icons/Map_Icons/GooglePlay.svg" alt="" />
+        <button className='h-9 cursor-pointer  hover:scale-105 hover:shadow-2xl'>
+          <a href="https://play.google.com/store/apps/details?id=com.foodpicasso.ninjasushi&hl=en">
+          <img className='' src="/Icons/Map_Icons/GooglePlay.svg" alt="GooglePlay_button" />
+          </a>
         </button>
       </div>
       </div>
 
       <div className="">
-        <img className='absolute right-95 z-1 top-1986 mb-5' src="/Icons/Map_Icons/Iphone12.svg" alt="Iphone12" />
-        <img className='absolute right-25 top-2042 mb-5' src="/Icons/Map_Icons/SamsungS20.svg" alt="SamsungS20" />
+        <img className='absolute right-95 z-1 top-[-154px]' src="/Icons/Map_Icons/Iphone12.svg" alt="Iphone12" />
+        <img className='absolute right-25 top-18' src="/Icons/Map_Icons/SamsungS20.svg" alt="SamsungS20" />
       </div>
     </div>
 

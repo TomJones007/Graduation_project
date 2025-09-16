@@ -6,12 +6,12 @@ import HeaderSlider from './HeaderSlider'
 const Header = () => {
    const [hoveredIndex, setHoveredIndex] = useState(null);
    
-  const FoodTypes = [
+const FoodTypes = [
     {title: 'Роллы', icon: '/Icons/Header_Icons/Rolls.svg', path: '/rolls', activeIcon: "/Icons/Header_Icons/Active/RollsActive.svg"},
     {title: 'Суши', icon: '/Icons/Header_Icons/Sushi.svg', path: '/sushi', activeIcon: "/Icons/Header_Icons/Active/SushiActive.svg"},
     {title: 'Сеты', icon: '/Icons/Header_Icons/Sets.svg', path: '/sets', activeIcon: "/Icons/Header_Icons/Active/SetsActive.svg"},
     {title: 'Боулы', icon: '/Icons/Header_Icons/Bouls.svg', path: '/bouls', activeIcon: "/Icons/Header_Icons/Active/BoulsActive.svg"}, 
-    {title: 'Напитки', icon: '/Icons/Header_Icons/Baverages.svg', path: '/baverages', activeIcon: "/Icons/Header_Icons/Active/BaveragesActive.svg"},
+    {title: 'Напитки', icon: '/Icons/Header_Icons/Baverages.svg', path: '/beverages', activeIcon: "/Icons/Header_Icons/Active/BaveragesActive.svg"},
     {title: 'Соусы', icon: '/Icons/Header_Icons/Sauces.svg', path: '/sauces', activeIcon: "/Icons/Header_Icons/Active/SaucesActive.svg"},
     {title: 'Неиз...', icon: '/Icons/Header_Icons/Unknown.svg', path: '/unknown', activeIcon: "/Icons/Header_Icons/Active/UnknownActive.svg"},
     {title: 'Неиз...', icon: '/Icons/Header_Icons/Unknown.svg', path: '/unknown', activeIcon: "/Icons/Header_Icons/Active/UnknownActive.svg"}
@@ -52,7 +52,7 @@ const Header = () => {
       ))}
     </div>
     </div>
-    <HeaderSlider />
+    
     </>
   )
 }

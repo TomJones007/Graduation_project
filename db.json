@@ -6,7 +6,13 @@
       "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
       "weight": "Вес: 40 г",
       "price": 190 ,
-      "image": "/Icons/Sushi_Icons/Gulkan.svg"
+      "image": "/Icons/Sushi_Icons/Gulkan.svg",
+      "tags": ["hit", "new"],
+      "properties": {
+        "spicy": true,
+        "sauce": false,
+        "vegetarian": true
+       }
     },
     {
       "id": 2,
@@ -14,7 +20,13 @@
       "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
       "weight": "Вес: 40 г",
       "price": 190,
-      "image": "/Icons/Sushi_Icons/GulkanKrivetka.svg"
+      "image": "/Icons/Sushi_Icons/GulkanKrivetka.svg",
+      "tags": ["new"],
+      "properties": {
+        "spicy": true,
+        "sauce": false,
+        "vegetarian": false
+       }
     },
     {
       "id": 3,
@@ -22,7 +34,13 @@
       "description": "Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло",
       "weight": "Вес: 40 г",
       "price": 190,
-      "image": "/Icons/Sushi_Icons/NigiriBlack.svg"
+      "image": "/Icons/Sushi_Icons/NigiriBlack.svg",
+      "tags": ["hit"],
+      "properties": {
+        "spicy": false,
+        "sauce": false,
+        "vegetarian": true
+       }
     },
     {
       "id": 4,

@@ -5,9 +5,7 @@ import { useTranslation } from "react-i18next";
 import NotificationsModal from "./NotificationsModal";
 import { useState } from "react";
 
-
-
-const Navbar = () => {
+export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const {t} =  useTranslation()
     const ChangeLang = par => {
@@ -17,7 +15,7 @@ const Navbar = () => {
 
 return (
     <>
-   
+   {/* <div className="flex justify-center"> */}
      <div className="flex m-5 p-5 items-center justify-around bg-white rounded-2xl">
 
     <div className="flex gap-5 bg-white">
@@ -63,18 +61,18 @@ return (
             <img src="/Icons/Navbar_Icons/Heart.svg" alt="heart" className="transition group-hover:invert group-hover:brightness-0 group-hover:contrast-100"/>
         </button>
 
-        <button className="group p-3 rounded-2xl border-gray-400 border-1 hover:bg-orange-500 active:bg-orange-500 transition" onClick={() => setIsOpen(true)}>
+        <button className="group p-3 rounded-2xl border-gray-400 border-1 hover:bg-orange-500 active:bg-orange-500 transition">
             <img src="/Icons/Navbar_Icons/Account.svg" alt="account" className="transition group-hover:invert group-hover:brightness-0 group-hover:contrast-100"/>     
         </button>
 
-        <button className="group flex gap-2 items-center p-3 pr-6 pl-6 rounded-2xl border-gray-400 border-1  hover:bg-orange-500 active:bg-orange-500 transition" onClick={() => setIsOpen(true)}>
+        <button className="group flex gap-2 items-center p-3 pr-6 pl-6 rounded-2xl border-gray-400 border-1  hover:bg-orange-500 active:bg-orange-500 transition" >
             <p className="transition group-hover:invert group-hover:brightness-0 group-hover:contrast-100">Корзина</p>
             <img src="/Icons/Navbar_Icons/Basket.svg" alt="basket" className="transition group-hover:invert group-hover:brightness-0 group-hover:contrast-100"/>
         </button>
     </div>
     
     </div>
-
+    {/* </div> */}
    
     </>
   )

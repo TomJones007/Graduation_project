@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const APISlice = createApi({
   reducerPath: "api",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5173/" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5000/" }),
   endpoints: (builder) => ({
     getSushi: builder.query({
       query: () => "sushi",

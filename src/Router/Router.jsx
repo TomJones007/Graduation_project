@@ -5,6 +5,13 @@ import MainPage from '../Pages/MainPage/MainPage'
 import Account from '../Pages/PersonalAccount/Account'
 import { Link, Route } from 'react-router-dom'
 import Contract from '../Pages/Contract/Contract'
+import Rolls from '../Pages/MainPage/Rolls/Rolls'
+import Sushi from '../Pages/MainPage/Sushi/Sushi'
+import Sets from '../Pages/MainPage/Sets/Sets'
+import Bouls from '../Pages/MainPage/Bouls/Bouls'
+import Beverages from '../Pages/MainPage/Beverages/Beverages'
+import Sauces from '../Pages/MainPage/Sauces/Sauces'
+import Snacks from '../Pages/MainPage/Snacks/Snacks'
 import Unknown from '../Pages/MainPage/Unknown/Unknown'
 
 export const RouterPages = [
@@ -50,12 +57,70 @@ export const RouterPages = [
         "id": 6,
         "name": "Unknown",
         "icon": "",
-        "href": '/404',
+        "href": '/unknown',
         "component": <Unknown/>
     },
   
 ]
 
+export const FoodTypes = [
+    {
+        "id": 1,
+        "name": "Роллы",
+        "icon": "",
+        "href": '/rolls',
+        "component": <Rolls/>
+    },
+    {
+        "id": 2,
+        "name": "Суши",
+        "icon": "",
+        "href": '/sushi',
+        "component": <Sushi/>
+    },
+    {
+        "id": 3,
+        "name": "Сеты",
+        "icon": "",
+        "href": '/sets',
+        "component": <Sets/>
+    },
+    {
+        "id": 4,
+        "name": "Боулы",
+        "icon": "",
+        "href": '/bouls',
+        "component": <Bouls />
+    },
+    {
+        "id": 5,
+        "name": "Напитки",
+        "icon": "",
+        "href": '/beverages',
+        "component": <Beverages/>
+    },
+    {
+        "id": 6,
+        "name": "Соусы",
+        "icon": "",
+        "href": '/sauces',
+        "component": <Sauces/>
+    },
+    {
+        "id": 7,
+        "name": "Неизв...",
+        "icon": "",
+        "href": '/unknown',
+        "component": <Unknown />
+    },
+    {
+        "id": 8,
+        "name": "Закуски",
+        "icon": "",
+        "href": '/snacks',
+        "component": <Snacks/>
+    },
+]
  
  export const Router = () => {
    return (

@@ -1,10 +1,12 @@
-import React from 'react'
-import Navbar from '../../../components/Navbar/Navbar'
 
-const Rolls = () => {
+
+export const Rolls = () => {
   return (
     <>
-    <Navbar/>
+   
+    <div className="">
+      <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil quis totam veritatis unde debitis quibusdam voluptatem dolorem ex facilis est libero, adipisci, vel corporis cum suscipit ab rem. Eveniet, pariatur.</h1>
+    </div>
     
     </>
   )

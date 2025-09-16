@@ -4,8 +4,17 @@ const Cards = ({ item }) => {
   }
 
   return (
-    <div className="flex items-center justify-center gap-2 p-5 rounded-2xl bg-white w-96 hover:scale-105 hover:shadow-2xl">
+    <div className="flex items-center justify-center gap-2 p-5 rounded-2xl bg-white w-96 hover:scale-105 hover:shadow-2xl relative">
       <div className="flex-col gap-2 w-[370px] ">
+
+      <div className="absolute top-3 left-3 flex gap-2">
+        {item.tags?.includes("hit") && (
+          <span className="bg-[#FBDCD5] text-[#FF6633] font-bold text-2xl px-3 py-1 rounded-lg">Hit</span>
+        )}
+          {item.tags?.includes("new") && (
+            <span className="bg-[#CCF5D5] text-[#00CC2D] font-bold text-2xl px-3 py-1 rounded-lg">New</span>
+          )}
+        </div>
 
       <div className="flex flex-col">
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const NotificationsModal = ({ onClose }) => {
+export const NotificationsModal = ({ onClose }) => {
   const [selectedTip, setSelectedTip] = useState(null);
 
   const tips = [
@@ -46,11 +46,12 @@ const NotificationsModal = ({ onClose }) => {
         </div>
 
         {/* Секция чаевых */}
-        <div className="p-5 bg-[#F5F5F7] rounded-2xl">
+        <div className="p-5 bg-[#e2e2e4] rounded-2xl">
           <p className="mb-4 font-medium">Ашот, ваш заказ успешно доставлен!</p>
-          <div className="">
 
+          <div className="">
           <p className="font-semibold mb-2 text-center">Хотите оставить чаевые?</p>
+
           <div className="flex flex-col gap-3">
             {tips.map((tip) => (
                 <button
@@ -73,6 +74,7 @@ const NotificationsModal = ({ onClose }) => {
               className="p-3 border rounded-lg col-span-2"
             />
           </div>
+
           {/* Кнопки действий */}
           <div className="flex justify-between mt-4">
             <button className="text-red-500 font-medium hover:underline">
@@ -84,7 +86,7 @@ const NotificationsModal = ({ onClose }) => {
           </div>
         </div>
 
-        {/* Линия */}
+      
        
 
         {/* Список уведомлений */}
