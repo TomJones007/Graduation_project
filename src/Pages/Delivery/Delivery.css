@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+  .delivery-header h1 {
+    font-size: 25px;
+  }
+
+  .delivery-map {
+    height: 250px;
+  }
+
+  .delivery-circles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-section h1 {
+    font-size: 26px;
+  }
+
+  .about-section p {
+    font-size: 0.9rem;
+  }
+}

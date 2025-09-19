@@ -1,0 +1,49 @@
+/*  Адаптив под планшеты (<= 768px) */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-block {
+    align-items: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+/*  Адаптив под телефоны (<= 480px) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .footer-top {
+    gap: 2rem;
+  }
+
+  .footer-block {
+    min-width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-bottom .payment {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .footer-bottom img {
+    width: 50px;
+    height: auto;
+  }
+}

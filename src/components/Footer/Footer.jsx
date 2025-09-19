@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import './Footer.css'
 
 const Footer = () => {
   const [img, setImg] = useState("/Icons/Footer_Icons/Facebook.svg")
@@ -7,8 +8,8 @@ const Footer = () => {
 
   return (
     <>
-  <div className="bg-white flex flex-col gap-2">
-    <div className="flex justify-around">
+  <div className="bg-white flex flex-col gap-2 footer">
+    <div className="flex justify-around footer-top">
 
     <div className="flex gap-20 mt-10 ">
       
@@ -115,12 +116,12 @@ const Footer = () => {
 
     </div>
 
-    <div className="flex gap-300 items-center m-10">
+    <div className="flex gap-300 items-center m-10 footer-bottom">
      
       
      <NavLink to="/contract">Политика конфиденциальности</NavLink>
 
-      <div className="payment flex gap-5">
+      <div className="payment flex gap-5 payment">
       <a href="https://www.mastercard.com/us/en.html" className='hover:scale-150 transition'>
         <img src="Icons/Footer_Icons/MasterCard.svg" alt="MasterCard" />
       </a>

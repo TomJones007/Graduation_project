@@ -140,7 +140,7 @@ const Contract = () => {
         </div>
 
     </div>
-    <Footer className="bg-[#F5F5F7]"/>
+    {/* <Footer className="bg-[#F5F5F7]"/> */}
     </>
   )
 }

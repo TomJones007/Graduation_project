@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Header from '../../components/Header/Header';
 import ProductList from '../../components/ProductList/ProductList';
@@ -17,6 +17,14 @@ const   MainPage = () => {
   const { data: beverages = [], isLoading: baveragesLoading, error: baveragesError } = useGetBeveragesQuery();
   const { data: sauces = [], isLoading: saucesLoading, error: saucesError } = useGetSaucesQuery();
 
+  useEffect(() => {
+    window.scrollTo({
+      top:0,
+      left: 0,
+      behavior: 'smooth',
+  })
+
+  }, [])
 
   return (
     <>
@@ -59,12 +67,13 @@ const   MainPage = () => {
         isLoading={baveragesLoading} 
         error={baveragesError} 
       />
-      {/* <ProductList 
+      
+      <ProductList 
         title="Соусы" 
         data={sauces} 
         isLoading={saucesLoading} 
         error={saucesError} 
-      /> */}
+      />
 
       <Map/>
     

@@ -4,6 +4,7 @@ import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 import NotificationsModal from "./NotificationsModal";
 import { useState } from "react";
+import BrandDropdown from "./BrandDropdown";
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,11 +19,7 @@ return (
    {/* <div className="flex justify-center"> */}
      <div className="flex m-5 p-5 items-center justify-around bg-white rounded-2xl">
 
-    <div className="flex gap-5 bg-white">
-        <img src="/Icons/Navbar_Icons/Logo.svg" alt="logo" />
-                    
-        <img className="p-5 bg-[#F5F5F7]" src="/Icons/Navbar_Icons/Arrow-down.svg" alt="arrow_down" />
-    </div>
+    <BrandDropdown/>
 
     <div className="flex gap-6 items-center">
         <div className="flex gap-1">

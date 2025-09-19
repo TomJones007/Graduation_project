@@ -4,7 +4,7 @@ const Cards = ({ item }) => {
   }
 
   return (
-    <div className="flex items-center justify-center gap-2 p-5 rounded-2xl bg-white w-96 hover:scale-105 hover:shadow-2xl relative">
+    <div className="flex items-center justify-center gap-2 p-5 rounded-2xl bg-white w-96 hover:scale-105 hover:shadow-2xl relative transition">
       <div className="flex-col gap-2 w-[370px] ">
 
       <div className="absolute top-3 left-3 flex gap-2">
