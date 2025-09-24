@@ -13,6 +13,11 @@ import Beverages from '../Pages/MainPage/Beverages/Beverages'
 import Sauces from '../Pages/MainPage/Sauces/Sauces'
 import Snacks from '../Pages/MainPage/Snacks/Snacks'
 import Unknown from '../Pages/MainPage/Unknown/Unknown'
+import Pizza from '../../PIZZA/Pizza'
+import Wok from '../../WOK/Wok'
+import Basket from '../Pages/Basket/Basket'
+import Favourites from '../Pages/Favourites/Favourites'
+import News from '../Pages/News/News'
 
 export const RouterPages = [
     {
@@ -41,24 +46,61 @@ export const RouterPages = [
 
     {
         "id": 4,
-        "name": "Basket",
+        "name": "Account",
         "icon": "",
         "href": '/account',
         "component": <Account/>
     },
     {
         "id": 5,
-        "name": "Contract",
+        "name": "Контракт",
         "icon": "",
         "href": '/contract',
         "component": <Contract/>
     },
     {
         "id": 6,
-        "name": "Unknown",
+        "name": "Неизвестно",
         "icon": "",
         "href": '/unknown',
         "component": <Unknown/>
+    },
+    {
+        "id": 7,
+        "name": "Wok",
+        "icon": "",
+        "href": '/wok',
+        "component": <Wok/>
+    },
+    {
+        "id": 8,
+        "name": "Pizza",
+        "icon": "",
+        "href": '/pizza',
+        "component": <Pizza/>
+    },
+    {
+        "id": 9,
+        "name": "Корзина",
+        "icon": "",
+        "href": '/basket',
+        "component": <Basket/>
+    },
+    {
+        "id": 10,
+        "name": "Избранные",
+        "icon": "",
+        "href": '/favourites',
+        "component": <Favourites/>
+
+    },
+    {
+        "id": 11,
+        "name": "Новости",
+        "icon": "",
+        "href": '/news',
+        "component": <News/>
+
     },
   
 ]

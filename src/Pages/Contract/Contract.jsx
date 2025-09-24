@@ -1,23 +1,23 @@
-import React from 'react'
-import Footer from '../../components/Footer/Footer'
+
 import Navbar from '../../components/Navbar/Navbar'
+import "./Contract.css";
 
 const Contract = () => {
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/> */}
     
-    <div className="flex flex-col gap-20 bg-white">
+    <div className="contract flex flex-col gap-20 bg-white contract__container">
         <h1 className='text-5xl font-bold text-center mt-15'>Публичный договор (оферта)</h1>
 
         <div className="flex flex-col items-center gap-15">
 
-            <div className="lex flex-col items-center ">             
+            <div className="lex flex-col items-center flex-wrap">             
             <p>Редакция от 10 июля 2018 года <br /> <br />
         Публичный договор (оферта) на сайте послуг веб-сайта ninjasushi.com.ua</p>
             </div>
         
-            <div className="flex flex-col items-start  gap-5">
+            <div className="flex flex-col items-start  gap-5 flex-wrap">
             <h2 className='text-3xl font-bold text-center pl-5'>Термины</h2>
             <ul className='flex flex-col gap-4 p-4'>
         <li><span className='font-bold'>Договор</span> — публичный договор на использование услуг Сайта</li>
@@ -28,7 +28,7 @@ const Contract = () => {
             </ul>
             </div>
 
-            <div className="flex flex-col items-start w-300 gap-10">
+            <div className="flex flex-col items-start w-300 gap-10 flex-wrap">
                 <h2 className='text-3xl font-bold text-center pl-5'>1. Общие положения</h2>
 
                 <div className="flex flex-col gap-5">
@@ -42,7 +42,7 @@ const Contract = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col items-start  w-300 gap-10">
+            <div className="flex flex-col items-start  w-300 gap-10 flex-wrap">
                  <h2 className='text-3xl font-bold text-center pl-5'>2. Товар</h2>
 
                 <div className="flex flex-col gap-5">
@@ -55,7 +55,7 @@ const Contract = () => {
 
             </div>
 
-            <div className="flex flex-col items-start w-300 gap-10">
+            <div className="flex flex-col items-start w-300 gap-10 flex-wrap">
                  <h2 className='text-3xl font-bold text-center pl-5'>3. Заказ Товара</h2>
 
                 <div className="flex flex-col gap-5">
@@ -71,7 +71,7 @@ const Contract = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col items-start w-300 gap-10">
+            <div className="flex flex-col items-start w-300 gap-10 flex-wrap">
                  <h2 className='text-3xl font-bold text-center pl-5'>4. Оплата Товара</h2>
 
                 <div className="flex flex-col gap-5">
@@ -91,7 +91,7 @@ const Contract = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col items-start w-300 gap-10">
+            <div className="flex flex-col items-start w-300 gap-10 flex-wrap">
                  <h2 className='text-3xl font-bold text-center pl-5'>5. Доставка Товара</h2>
 
                 <div className="flex flex-col gap-5">
@@ -105,7 +105,7 @@ const Contract = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col items-start w-300 gap-10">
+            <div className="flex flex-col items-start w-300 gap-10 flex-wrap">
                  <h2 className='text-3xl font-bold text-center pl-5'>6. Возврат и обмен Товара</h2>
 
                 <div className="flex flex-col gap-5">
@@ -113,7 +113,7 @@ const Contract = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col items-start w-300 gap-10">
+            <div className="flex flex-col items-start w-300 gap-10 flex-wrap shrink-0">
                  <h2 className='text-3xl font-bold text-center pl-5'>7. Конфиденциальность и персональные данные</h2>
 
                 <div className="flex flex-col gap-5">

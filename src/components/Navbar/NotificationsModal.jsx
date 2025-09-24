@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import Modal from "../Modal/Modal";
 
-export const NotificationsModal = ({ onClose }) => {
+const NotificationsModal = ({ open, onClose }) => {
   const [selectedTip, setSelectedTip] = useState(null);
 
   const tips = [
@@ -10,99 +11,82 @@ export const NotificationsModal = ({ onClose }) => {
   ];
 
   const notifications = [
-    {
-      id: 1,
-      text: "Ашот, ваш заказ успешно доставлен!",
-      type: "success",
-      time: "16:40",
-    },
-    {
-      id: 2,
-      text: "Итальянская полиция обнаружила картину Тициана, исчезнувшую в 2004 году",
-      time: "16:40",
-    },
-    {
-      id: 3,
-      text: "Итальянская полиция обнаружила картину Тициана, исчезнувшую в 2004 году",
-      time: "16:40",
-    },
+    { id: 1, text: "Ашот, ваш заказ успешно доставлен!", type: "success", time: "16:40" },
+    { id: 2, text: "Итальянская полиция обнаружила картину Тициана, исчезнувшую в 2004 году", time: "16:40" },
+    { id: 3, text: "Итальянская полиция обнаружила картину Тициана, исчезнувшую в 2004 году", time: "16:40" },
   ];
 
   return (
-    <div className="fixed flex right-10 justify-center items-start z-5">
-      {/* Модальное окно */}
-      <div className="bg-white rounded-xl shadow-lg w-full max-w-md mt-10 relative">
-        {/* Кнопка закрытия */}
-        <button
-          onClick={onClose}
-          className="absolute top-3 right-3 text-gray-500 hover:text-black text-xl bg-[#F5F5F7] p-2 rounded-[9px] w-11"
-        >
-          ✕
-        </button>
-
-        {/* Заголовок */}
-        <div className="p-5 border-b">
-          <h2 className="text-xl font-bold">Уведомления</h2>
+    <Modal open={open} onClose={onClose} mobileMode="center" labelledBy="notif-title">
+      {/* header */}
+      <div className="sticky top-0 bg-white z-10 px-5 py-4 border-b rounded-t-2xl">
+        <div className="flex items-center justify-between">
+          <h2 id="notif-title" className="text-lg sm:text-xl font-bold">Уведомления</h2>
+          <button
+            onClick={onClose}
+            className="p-2 rounded-lg bg-[#F5F5F7] text-gray-600 hover:bg-gray-200 cursor-pointer"
+            aria-label="Закрыть уведомления"
+          >
+            ✕
+          </button>
         </div>
+      </div>
 
-        {/* Секция чаевых */}
-        <div className="p-5 bg-[#e2e2e4] rounded-2xl">
-          <p className="mb-4 font-medium">Ашот, ваш заказ успешно доставлен!</p>
+      {/* tipping card */}
+      <div className="px-5 pt-4 pb-5">
+        <div className="bg-[#F5F5F7] rounded-xl p-4 sm:p-5">
+          <p className="font-medium mb-2">Ашот, ваш заказ успешно доставлен!</p>
+          <p className="font-semibold mb-3 text-center">Хотите оставить чаевые?</p>
 
-          <div className="">
-          <p className="font-semibold mb-2 text-center">Хотите оставить чаевые?</p>
-
-          <div className="flex flex-col gap-3">
+          <div className="grid grid-cols-3 gap-2 sm:gap-3">
             {tips.map((tip) => (
-                <button
+              <button
                 key={tip.value}
                 onClick={() => setSelectedTip(tip.value)}
-                className={`p-3 rounded-lg border text-lg font-medium ${
+                className={`p-3 rounded-lg border text-base sm:text-lg font-medium transition
+                  ${
                     selectedTip === tip.value
-                    ? "bg-orange-500 text-white border-orange-500"
-                    : "bg-gray-100 hover:bg-gray-200"
-                }`}
-                >
+                      ? "bg-orange-500 text-white border-orange-500"
+                      : "bg-white hover:bg-gray-100 border-gray-200"
+                  }`}
+              >
                 {tip.value} ₴ ({tip.percent})
               </button>
             ))}
-            </div>
-            {/* Ввести вручную */}
             <input
               type="number"
               placeholder="Укажите сумму"
-              className="p-3 border rounded-lg col-span-2"
+              className="col-span-3 p-3 border rounded-lg"
+              onChange={(e) => setSelectedTip(Number(e.target.value) || null)}
             />
           </div>
 
-          {/* Кнопки действий */}
-          <div className="flex justify-between mt-4">
+          <div className="flex flex-col sm:flex-row gap-3 justify-between mt-4">
             <button className="text-red-500 font-medium hover:underline">
               Не оставлять чаевых
             </button>
             <button className="text-green-600 font-semibold">
-              Оплатить {selectedTip ?? "₴"}
+              Оплатить {selectedTip ? `${selectedTip} ₴` : "₴"}
             </button>
           </div>
         </div>
+      </div>
 
-      
-       
-
-        {/* Список уведомлений */}
-        <div className="p-5 max-h-60 overflow-y-auto space-y-4">
+      {/* list */}
+      <div className="px-5 pb-5">
+        <div className="max-h-[52vh] overflow-y-auto space-y-3 pr-1">
           {notifications.map((n) => (
             <div key={n.id} className="border rounded-lg p-3 relative">
-              <p>{n.text}</p>
+              <p className="text-sm sm:text-base">{n.text}</p>
               <span className="text-xs text-gray-500">{n.time}</span>
               {n.type === "success" && (
-                <span className="absolute top-2 right-2 w-3 h-3 bg-orange-500 rounded-full"></span>
+                <span className="absolute top-3 right-3 w-2.5 h-2.5 bg-orange-500 rounded-full" />
               )}
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </Modal>
   );
 };
 

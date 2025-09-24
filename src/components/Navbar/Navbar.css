@@ -1,0 +1,73 @@
+/* файл: src/components/Navbar/Navbar.css */
+
+/* утилитные классы для бейджей и кнопок-иконок */
+.icon-btn {
+  background: #f5f5f7;
+  border: 1px solid #e5e7eb;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* transition: background .2s ease, transform .12s ease; */
+}
+.icon-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* бейдж для кол-ва (положение адаптируется) */
+.nav-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #ef4444; /* red-500 */
+  color: white;
+  font-size: 11px;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+/* адаптив: мелкие экраны */
+@media (max-width: 767px) {
+  .navbar {
+    margin: 12px;
+    padding: 12px;
+  }
+
+  /* на мобилке бейджы чуть больше чтобы чётко видно было */
+  .nav-badge {
+    top: -8px;
+    right: -8px;
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
+  }
+
+  /* меню-кнопка видна, десктоп меню скрыто (tailwind тоже скрывает) */
+  .menu-desktop { display: none !important; }
+}
+
+/* планшеты: чуть меньше отступы */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    margin: 14px;
+    padding: 14px;
+  }
+}
+
+/* чтобы бэйджи не улетали */
+.icon-btn { position: relative; }
+.nav-badge {
+  position: absolute; top: -6px; right: -6px;
+  background: #ef4444; color:#fff; width:20px; height:20px;
+  display:flex; align-items:center; justify-content:center;
+  border-radius:9999px; font-size:11px; box-shadow:0 1px 3px rgba(0,0,0,.15);
+}
+
+@media (max-width: 639px) {
+  .navbar { margin: 12px; padding: 12px; }
+  .nav-badge { top: -8px; right: -8px; width:22px; height:22px; font-size:12px; }
+}

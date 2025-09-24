@@ -1,0 +1,71 @@
+/* ===== Base layout & typography ===== */
+
+
+
+@media (min-width: 768px) {
+  .contract__container {
+    padding: 32px 24px 48px;
+  }
+}
+
+/* ===== Title & intro ===== */
+
+
+@media (min-width: 768px) {
+  .contract__section-title {
+    text-align: center;
+  }
+}
+
+/* ===== Paragraphs ===== */
+
+/* bump gap a bit on tablets/desktops */
+@media (min-width: 768px) {
+  .contract__paragraphs {
+    gap: 16px;
+  }
+}
+
+/* ===== Lists ===== */
+
+@media (min-width: 768px) {
+  .contract__list {
+    gap: 12px;
+  }
+}
+
+/* ===== Footer note ===== */
+
+/* ===== Better long-word handling on mobile (when supported) ===== */
+@supports (hyphens: auto) or (-webkit-hyphens: auto) or (-ms-hyphens: auto) {
+  .contract__paragraphs,
+  .contract__intro,
+  .contract__list {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+  }
+}
+
+/* ===== Print styles ===== */
+@media print {
+  .contract__container {
+    max-width: 700px;
+    padding: 0;
+  }
+  .contract__title {
+    font-size: 28pt;
+  }
+  .contract__section {
+    margin-top: 18pt;
+  }
+  .contract__section-title {
+    font-size: 16pt;
+    text-align: left;
+  }
+  .contract__paragraphs,
+  .contract__list {
+    font-size: 12pt;
+    color: #000;
+  }
+}

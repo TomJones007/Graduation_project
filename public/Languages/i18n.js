@@ -9,14 +9,14 @@ i18next
   .use(HttpBackend)       // для загрузки переводов из файлов
   .use(initReactI18next)  // подключаем React-i18next
   .init({
-    fallbackLng: 'en',    // язык по умолчанию
+    fallbackLng: 'ru',    // язык по умолчанию
     debug: true,          // для отладки
     interpolation: {
       escapeValue: false, // не экранировать HTML
     },
     backend: {
-      loadPath: '/Languages/{Eng}/Translation.json', 
-      loadPath: '/Languages/{Ru}/Translation.json', 
+      // loadPath: '/Languages/{Eng}/Translation.json', 
+      loadPath: '/Languages/{{lng}}/Translation.json', 
     },
   });
 

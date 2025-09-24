@@ -1,9 +1,10 @@
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
 import Cards from "../Cards/Cards";
+import "./ProductList.css";
 
 const ProductList = ({ data, title, isLoading, error }) => {
-  if (isLoading) return <p>Загрузка {title}...</p>;
-  if (error) return <p>Ошибка при загрузке {title}</p>;
+  if (isLoading) return <p className="product-section__state">Загрузка {title}...</p>;
+  if (error) return <p className="product-section__state">Ошибка при загрузке {title}</p>;
 
   const routesMap = {
     "Суши": "/sushi",
@@ -16,25 +17,22 @@ const ProductList = ({ data, title, isLoading, error }) => {
   }
 
   return (
-    <div className="my-10">
-      <div className="flex justify-between py-8">
-      <h2 className="text-4xl font-bold mb-4 ml-20">{title}</h2>
+    <section className="product-section">
+      <div className="product-section__header">
+      <h2 className="product-section__title">{title}</h2>
 
-      <NavLink to={routesMap[title] || "/"}>
-      <button className="text-[#00CC2D] p-5 bg-white rounded-2xl mb-4 mr-20 cursor-pointer hover:scale-110 hover:shadow-sm">
-      
+      <NavLink to={routesMap[title] || "/"} className="product-section__link">
+    
           Смотреть все
-        
-      </button>
       </NavLink>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="product-section__grid">
         {data.map((item) => (
           <Cards key={item.id} item={item} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

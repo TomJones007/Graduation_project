@@ -1,7 +1,18 @@
+import { useDispatch, useSelector } from "react-redux";
+import { toggleFavourite } from "../../Store/FavouritesSlice";
+import { addToCart } from "../../Features/Cart/CartSlice";
+
+
+
 const Cards = ({ item }) => {
+  const dispatch = useDispatch()
+  const favourites = useSelector((state)=> state.favourites)
+
   if (!item) {
     return null; 
   }
+
+  const isFav = favourites.some((fav)=>fav.id === item.id)
 
   return (
     <div className="flex items-center justify-center gap-2 p-5 rounded-2xl bg-white w-96 hover:scale-105 hover:shadow-2xl relative transition">
@@ -35,10 +46,21 @@ const Cards = ({ item }) => {
         </p>
 
         <div className="flex gap-4 items-center justify-center">
-        <button className="bg-[#F5F5F7] p-3 rounded-[10px] ">
-          <img src="/Icons/Navbar_Icons/Heart.svg" alt="heart_button" />
+          {/* Избранное  */}
+        <button
+        onClick={() => dispatch(toggleFavourite(item))} 
+        className="bg-[#F5F5F7] p-3 rounded-[10px] cursor-pointer hover:scale-120">
+          
+          <img 
+          src={isFav ? "/Icons/Navbar_Icons/HeartFilled.svg"  : "/Icons/Navbar_Icons/Heart.svg"}
+          alt="heart_button" />
+          
         </button>
-        <button className="w-20 bg-[#CCF5D5] text-4xl p-2 rounded-[10px]">+</button>
+
+        {/* Корзина */}
+        <button 
+        onClick={()=> dispatch(addToCart(item))}
+        className="w-20 bg-[#CCF5D5] text-4xl p-2 rounded-[10px]">+</button>
         </div>
       </div>
       </div>
